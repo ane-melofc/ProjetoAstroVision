@@ -1,0 +1,358 @@
+*{ box-sizing: border-box;}
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(imagens/PRINCIPAL.jpg);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    text-align: center;
+    margin: auto;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 25px;
+    background-color: black;
+}
+
+header h1 img{
+    border-radius: 100%;
+}
+
+h1{ margin: 0%;}
+
+header h1 img {
+    max-width: 20%;
+}
+
+
+nav{
+    transform: scale(0.9);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    justify-content:space-evenly;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.897);
+    min-width: 400px;
+    max-width: 1000px;
+}
+
+
+p{
+    font-size: 20px;
+}
+
+
+    
+
+
+nav a{
+    padding: 9px;
+    background-color: rgba(255, 255, 255, 0.11);
+    transition: 400ms;
+    border-radius: 10%;
+    font-size: 16px;
+    
+}
+
+nav a:hover{
+    background-color: rgba(151, 151, 151, 0.692);
+    transform: scale(1.05);
+    box-shadow: 0 0 2px;
+}
+
+h1, nav{
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+.sombra{
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.082);
+    text-shadow: 1px 1px 3px black;
+}
+
+main{
+    padding-top: 2px;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+div h2{
+    font-size: 50px;
+    animation-name:aparecer ;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    
+}
+
+div p{
+    font-size: 30px;
+    animation-name:aparecer ;
+    animation-duration: 2s;
+    animation-delay: 700ms;
+    animation-fill-mode: backwards;
+}
+
+.destaque{
+    background-image: url(imagens/blackhole.jpg);
+    height: 520px;
+    color: white;
+    text-align: center;
+
+
+    
+
+    background-attachment: fixed;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    align-content: center;
+
+    max-width: 100%;
+
+}
+
+@keyframes aparecer{
+    from {opacity: 0;}
+    and {transform: scale(1.1);}
+    to{opacity: 1;}
+}
+
+ul{
+    font-size: 19px;
+}
+
+.subtitulos{
+    font-family: 'Inconsolata', monospace;
+    text-shadow: black 5px 5px 3px;
+    margin-bottom: 90px;
+}
+
+.segundo-subtitulo{
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+/* texto index */
+.texto{
+    font-size: 25px;
+    margin: auto;
+    width: 75%;
+    margin-bottom: 90px;
+    border-bottom: solid rgba(128, 127, 127, 0.514);
+    margin-top: 50px;
+}
+
+
+img{ max-width: 100%;}
+
+li{
+    margin: 20px;
+}
+
+figure{
+    border-radius: 10px;
+    min-width: auto;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    align-content: center;   
+}
+
+figure a img{
+    border: solid rgba(245, 245, 220, 0.295);
+    border-radius: 6px;
+    transition: 1s;
+    margin-bottom: 15px;
+    width: 100%;
+    transform: scale(1.1);
+}
+
+figure a{
+    display: flex;
+}
+
+figure img:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+/* oque é */
+.fundo{
+    background-color: rgba(107, 107, 107, 0.267);
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+
+}
+
+iframe{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    
+}
+
+
+
+/* TEORIAS */
+.caixas{
+    background-color: rgba(240, 240, 240, 0.527);
+    border-radius: 15px;
+    border: solid rgb(15, 15, 15);
+    padding: 10px;
+    margin-bottom: 50px;
+    
+}
+
+.caixas img{
+    border-radius: 10%;
+}
+
+
+.conteudo{
+    display: flex;
+    flex-direction: initial;
+    margin-top: 4px;
+}
+
+.textinho{
+    padding-left: 25px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* rodapé */
+footer{
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.637);
+    text-align: center;
+    border-top: 0.4px solid rgba(112, 111, 111, 0.226);
+}
+
+
+/* icones redes sociais */
+div.redes{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+} 
+
+.redes img{
+    padding: 10px;
+    transition: 2s;
+    transform: scale(-0.5px);
+    
+}
+
+.redes img:hover{
+    border: 2px;
+    transform: translate(-2px);
+    
+}
+
+/* Como Surgem */
+#surgem{
+    display: flex;
+    flex-direction: column;
+    max-width: 35%;
+    margin: auto;
+}
+
+#textinho{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 17px;
+}
+
+
+@media screen and (min-width: 420px) {
+
+nav{margin:auto;}
+
+figure{min-width: 100px;}
+
+.texto{font-size: 17px;}
+
+.fundo{max-width: 390px;}
+
+article{ max-width: 350px;}
+}
+
+
+@media screen and (min-width: 730px){
+
+    .fundo{ max-width: 690px;}
+
+    article{ max-width: 620px;}      
+}
+
+    
+
+
+@media screen and (min-width: 1100px) {
+
+    .limitador{
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    figure{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    figure img{
+        margin: 30px;
+    }
+
+    .fundo{max-width: 1050px;}
+
+    article{ 
+        max-width: 1000px;
+        margin: auto;
+    }
+}
